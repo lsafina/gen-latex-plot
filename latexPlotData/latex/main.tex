@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{stmaryrd}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{enumerate}
+\usepackage{todonotes}
+\usepackage{tikz,pgfplots}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{import}
+\usepackage{wrapfig}
+\usepackage{breakcites}
+\usepackage{hyperref}
+\usepackage{etex}
+\usepackage[all]{xy}
+\bibliographystyle{plain}
+\usepackage{makerobust}
+\usepackage[font=large]{caption}
+
+\MakeRobustCommand{\Call}
+
+\algnewcommand{\lIf}[2]{\State \algorithmicif\ #1 \algorithmicthen\ #2}
+\algnewcommand{\lElsIf}[2]{\State \algorithmicelse\ \algorithmicif\ #1 \algorithmicthen\ #2}
+\algnewcommand{\LineComment}[1]{\State \(\triangleright\) #1}
+
+\title{extraction}
+\date{October 2018}
+
+\begin{document}
+    \input{gen/file.tex}
+\end{document}
